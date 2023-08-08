@@ -314,7 +314,7 @@ const def = new Map([
     {
       id: "slide5",
       top: 6100,
-      bottom: 9000,
+      bottom: 7400,
       topStyle: {
         opacity: 0,
       },
@@ -325,7 +325,7 @@ const def = new Map([
         {
           enabled: false,
           top: 6100,
-          bottom: 7100,
+          bottom: 7400,
           easing: midSlow,
           styles: [
             {
@@ -339,6 +339,90 @@ const def = new Map([
           enabled: false,
           top: 6100,
           bottom: 6700,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "slide6",
+    {
+      id: "slide6",
+      top: 7500,
+      bottom: 8800,
+      topStyle: {
+        opacity: 0,
+      },
+      bottomStyle: {
+        opacity: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 7500,
+          bottom: 8800,
+          easing: midSlow,
+          styles: [
+            {
+              name: "translateY",
+              topValue: 60,
+              bottomValue: -60,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 7500,
+          bottom: 8800,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "slide7",
+    {
+      id: "slide7",
+      top: 8900,
+      bottom: 10200,
+      topStyle: {
+        opacity: 0,
+      },
+      bottomStyle: {
+        opacity: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 8900,
+          bottom: 10200,
+          easing: midSlow,
+          styles: [
+            {
+              name: "translateY",
+              topValue: 60,
+              bottomValue: -60,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 8900,
+          bottom: 9500,
           easing: ease,
           styles: [
             {
@@ -406,6 +490,8 @@ const elements = {
   "moving-background": document.getElementById("moving-background"),
   slide4: document.getElementById("slide4"),
   slide5: document.getElementById("slide5"),
+  slide6: document.getElementById("slide6"),
+  slide7: document.getElementById("slide7"),
 };
 
 function onScroll() {
@@ -461,7 +547,7 @@ window.addEventListener("scroll", onScroll);
 
 function initAnimation() {
   // Sticky Conainer 의 높이를 설정함.
-  elements["sticky-container"].style.height = `7100px`;
+  elements["sticky-container"].style.height = `9800px`;
 
   // 모든 요소를 disabled 에 넣음.
   def.forEach((obj, id) => {
