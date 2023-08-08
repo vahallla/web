@@ -19,15 +19,15 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="logo"><a href="index.html">Tech <span>by 폰팔이</span></a></div>
-		<a href="#menu"><span>Menu</span></a>
+		<a href="#menu"><span>Menu</span></a>	
 	</header>
 
 	<!-- Nav -->
 	<nav id="menu">
 		<ul class="links">
 			<li><a href="index.html">Home</a></li>
-			<li><a href="generic.html">Generic</a></li>
-			<li><a href="elements.html">Elements</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="testroll.html">Elements</a></li>
 		</ul>
 	</nav>
 
@@ -48,9 +48,8 @@
 	</section>
 
 	<!-- One -->
-	<section id="one" class="wrapper post bg-img" data-bg="blue.jpeg"> <!--삼성 핸드폰-->
+	<section id="one" class="wrapper post bg-img" data-bg="sam.jpg"> <!--삼성 핸드폰-->
 		<div class="phone_2">
-			<img src="images/sam2.png" height: 10px; width: 10px;>
 
 		</div>
 		<div class="inner">
@@ -62,10 +61,8 @@
 				</header>
 				<div class="content">
 					<div class="phone" style="text-align: center">
-						<img src="images/flip5_black.png" style=" height: 300px; width: 300px; text-align: center">
-						<img src="images/flip5_green.png" style=" height: 300px; width: 300px; text-align: center">
-						<img src="images/flip5_cream.png" style=" height: 300px; width: 300px;">
-						<img src="images/flip5_lavender.png" style=" height: 300px; width: 300px;">
+						<img src="images/sma_gal.gif" style=" height: auto; width: auto; text-align: center">
+						
 					</div>
 					<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim
 						platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate
@@ -82,7 +79,7 @@
 	</section>
 
 	<!-- Two -->
-	<section id="two" class="wrapper post bg-img" data-bg="apple.png">
+	<section id="two" class="wrapper post bg-img" data-bg="apple.png">		<!--아이폰-->
 		<div class="inner">
 			<article class="box">
 				<header>
@@ -90,7 +87,7 @@
 					<h4>최신 아이폰 14 pro</h4>
 				</header>
 				<div class="content">
-					<img src="images/apple.gif" style=" height: 300px; width: 300px; text-align: center">
+					<img src="images/apple.gif" style=" height: auto; width: auto; text-align: center">
 					<p>최신 아이폰 만나보세요!</p>
 				</div>
 				<footer>
@@ -102,12 +99,12 @@
 	</section>
 
 	<!-- Three -->
-	<section id="three" class="wrapper post bg-img" data-bg="banner4.jpg"> <!--아이폰-->
+	<section id="three" class="wrapper post bg-img" data-bg="banner4.jpg"> <!--맥푹-->
 		<div class="inner">
 			<article class="box">
 				<header>
 					<h2>Macbook 제품</h2>
-					<img src="images/apple-apple-mac.gif" style=" height: 300px; width: 300px; text-align: center">
+					<img src="images/mac_main.gif" style=" height: auto; width: auto; text-align: center">
 					<p>최신 Pixel</p>
 				</header>
 				<div class="content">
@@ -190,3 +187,21 @@
 
 
 </html>
+
+<script>
+
+    let video = document.getElementById('myVideo');
+
+window.addEventListener('scroll', function() {
+    // 비디오가 아직 끝나지 않았다면 스크롤 위치를 비디오 섹션의 하단에 고정
+    if (!video.ended) {
+        window.scrollTo(0, video.offsetTop + video.offsetHeight);
+    }
+});
+
+video.addEventListener('ended', function() {
+    // 비디오가 끝나면 스크롤 제한을 해제
+    window.removeEventListener('scroll', scrollHandler);
+});
+
+</script>
