@@ -52,30 +52,30 @@
 		<div class="phone_2">
 			<img src="images/sam2.png" height: 10px; width: 10px;>
 
-		<div class="inner">
-			<article class="box">
+			<div class="inner">
+				<article class="box">
 
-				<header>
-					<h2>Samsung Galaxy</h2>
+					<header>
+						<h2>Samsung Galaxy</h2>
 
-				</header>
-				<div class="content">
-					<div class="phone" style="text-align: center">
-						<img src="images/sma_gal.gif" style=" height: auto; width: auto; text-align: center">
-						
+					</header>
+					<div class="content">
+						<div class="phone" style="text-align: center">
+							<img src="images/sma_gal.gif" style=" height: auto; width: auto; text-align: center">
+
+						</div>
+						<p>새로운 Galaxy를 만나보세요!</p>
+
 					</div>
-					<p>새로운 Galaxy를 만나보세요!</p>
-
-				</div>
-				<footer>
-					<a href="SSdetail.html" class="button alt">Learn More</a>
-				</footer>
-			</article>
-		</div>
+					<footer>
+						<a href="SSdetail.html" class="button alt">Learn More</a>
+					</footer>
+				</article>
+			</div>
 	</section>
 
 	<!-- Two -->
-	<section id="two" class="wrapper post bg-img" data-bg="apple.png">
+	<section id="two" class="wrapper post bg-img" data-bg="apple1.png"> <!--아이폰-->
 		<div class="inner">
 			<article class="box">
 				<header>
@@ -95,7 +95,7 @@
 	</section>
 
 	<!-- Three -->
-	<section id="three" class="wrapper post bg-img" data-bg="banner4.jpg"> <!--아이폰-->
+	<section id="three" class="wrapper post bg-img" data-bg="apple2.png"> <!--맥-->
 		<div class="inner">
 			<article class="box">
 				<header>
@@ -186,18 +186,18 @@
 
 <script>
 
-    let video = document.getElementById('myVideo');
+	let video = document.getElementById('myVideo');
 
-window.addEventListener('scroll', function() {
-    // 비디오가 아직 끝나지 않았다면 스크롤 위치를 비디오 섹션의 하단에 고정
-    if (!video.ended) {
-        window.scrollTo(0, video.offsetTop + video.offsetHeight);
-    }
-});
+	window.addEventListener('scroll', function () {
+		// 비디오가 아직 끝나지 않았다면 스크롤 위치를 비디오 섹션의 하단에 고정
+		if (!video.ended) {
+			window.scrollTo(0, video.offsetTop + video.offsetHeight);
+		}
+	});
 
-video.addEventListener('ended', function() {
-    // 비디오가 끝나면 스크롤 제한을 해제
-    window.removeEventListener('scroll', scrollHandler);
-});
+	video.addEventListener('ended', function () {
+		// 비디오가 끝나면 스크롤 제한을 해제
+		window.removeEventListener('scroll', scrollHandler);
+	});
 
 </script>
