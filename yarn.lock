@@ -99,6 +99,11 @@ rollup@^3.10.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
+scrollmagic@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.npmjs.org/scrollmagic/-/scrollmagic-2.0.8.tgz"
+  integrity sha512-UYXEGBPVLziovXl3FjHGkY9c4UXKUKopIdXwWR2JapWxCo0U345wYegi7rcsv5vHf/ktc1bSNWy4QRFiV+Yccw==
+
 source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz"
