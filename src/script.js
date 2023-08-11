@@ -309,6 +309,7 @@ const def = new Map([
       ],
     },
   ],
+
   [
     "slide5",
     {
@@ -435,6 +436,48 @@ const def = new Map([
       ],
     },
   ],
+  [
+    "slide8",
+    {
+      id: "slide8",
+      top: 10300,
+      bottom: 11600,
+      topStyle: {
+        opacity: 0,
+      },
+      bottomStyle: {
+        opacity: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 10300,
+          bottom: 11600,
+          easing: midSlow,
+          styles: [
+            {
+              name: "translateY",
+              topValue: 60,
+              bottomValue: -60,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 10300,
+          bottom: 10900,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+          ],
+        },
+      ],
+    },
+  ],
 ]);
 
 const enabled = new Map();
@@ -492,6 +535,7 @@ const elements = {
   slide5: document.getElementById("slide5"),
   slide6: document.getElementById("slide6"),
   slide7: document.getElementById("slide7"),
+  slide8: document.getElementById("slide8"),
 };
 
 function onScroll() {
@@ -547,7 +591,7 @@ window.addEventListener("scroll", onScroll);
 
 function initAnimation() {
   // Sticky Conainer 의 높이를 설정함.
-  elements["sticky-container"].style.height = `9800px`;
+  elements["sticky-container"].style.height = `11000px`;
 
   // 모든 요소를 disabled 에 넣음.
   def.forEach((obj, id) => {
