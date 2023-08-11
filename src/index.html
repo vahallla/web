@@ -16,6 +16,10 @@
 <body>
 
 
+
+
+
+
 	<!-- Header -->
 	<header id="header">
 		<div class="logo"><a href="index.html">Tech <span>by Pineapple</span></a></div>
@@ -39,9 +43,12 @@
 		-->
 	<section id="banner" class="bg-img" data-bg="phone.webp"> <!--1페이지-->
 		<div class="inner">
+
+
 			<header>
 				<h1>All New Tech Item</h1>
 			</header>
+
 
 		</div>
 		<a href="#one" class="more">Learn More</a>
@@ -184,21 +191,3 @@
 
 
 </html>
-
-<script>
-
-	let video = document.getElementById('myVideo');
-
-	window.addEventListener('scroll', function () {
-		// 비디오가 아직 끝나지 않았다면 스크롤 위치를 비디오 섹션의 하단에 고정
-		if (!video.ended) {
-			window.scrollTo(0, video.offsetTop + video.offsetHeight);
-		}
-	});
-
-	video.addEventListener('ended', function () {
-		// 비디오가 끝나면 스크롤 제한을 해제
-		window.removeEventListener('scroll', scrollHandler);
-	});
-
-</script>
