@@ -10,25 +10,27 @@
 
 <head>
 	<title>Tech Item</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script type="text/javascript"> 
-		$(document).ready(function() {
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
 			$("#img_samsung_phone").hover(
-            function() {
-                $(this).attr("src","images/samsung-samsung-galaxy (2).gif");
-            },
-            function() {
-                $(this).attr("src","images/samsung-samsung-galaxy (2)-0000.jpg");
-            }
-    		); 
+				function () {
+					$(this).attr("src", "images/samsung-samsung-galaxy (2).gif");
+				},
+				function () {
+					$(this).attr("src", "images/samsung-samsung-galaxy (2)-0000.jpg");
+				}
+			);
 			$("#img_samsung_watch").hover(
-            function() {
-                $(this).attr("src","images/samsung_Watch.gif");
-            },
-            function() {
-                $(this).attr("src","images/samsung_Watch.jpg");
-            }
-    		); 
+				function () {
+					$(this).attr("src", "images/samsung_Watch.gif");
+				},
+				function () {
+					$(this).attr("src", "images/samsung_Watch.jpg");
+				}
+			);
 			$("#img_samsung_buds").hover(
             function() {
                 $(this).attr("src","images/samsung_buds2_pro.gif");
@@ -46,7 +48,7 @@
             }
     		); 
 		});
-	</script> 
+	</script>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -57,7 +59,7 @@
 
 	<!-- Header -->
 	<header id="header">
-		<div class="logo"><a href="index.html">Tech <span>by 폰팔이</span></a></div>
+		<div class="logo"><a href="index.html">Tech <span>by Pineapple</span></a></div>
 		<a href="#menu"><span>Menu</span></a>
 	</header>
 
@@ -66,7 +68,7 @@
 		<ul class="links">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="shop.html">Shop</a></li>
-			<li><a href="elements.html">Elements</a></li>
+
 		</ul>
 	</nav>
 
@@ -76,12 +78,12 @@
 			to the full filename of your image. This is used in each section to set
 			the background image.
 		-->
-	
+
 
 	<!-- One -->
 	<section id="one" class="wrapper post bg-img" data-bg="sam.jpg"> <!--삼성 핸드폰-->
 		<div class="phone_2">
-			
+
 			<div class="inner">
 				<div style="float: left; margin-right: 100000px;">
 					<img src="images/256_144_4.avif" style="height: 100px; width: 100px;">
@@ -91,21 +93,22 @@
 						<h2>Samsung Galaxy</h2>
 					</header>
 					<div class="content">
+						<span class="hov-anim-box">
 						<div class="button_1" style="display: flex; float: left; ">
-							<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: #F2F2F2;">
-								<img id="img_samsung_phone" src="images/samsung-samsung-galaxy (2)-0000.jpg" style="height: 100%; width: 100%;">
+							<button style="height: 200px; width: 200px; margin: 10px;">
+								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
 							</button>
-							<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: #FFFFFF;">
-								<img id="img_samsung_watch" src="images/samsung_Watch.jpg" style="height: 100%; width: 100%;">
+							<button style="height: 200px; width: 200px; margin: 10px;">
+								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
 							</button>
-							<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: #FFFFFF;">
-								<img id="img_samsung_buds" src="images/samsung_buds2_pro.jpg" style="height: 100%; width: 100%;">
+							<button style="height: 200px; width: 200px; margin: 10px;">
+								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
 							</button>
 						</div>
 					</div>
 				</article>
 			</div>
-			</div>
+		</div>
 	</section>
 
 	<!-- Two -->
@@ -124,10 +127,12 @@
 							<img id="img_apple_phone" src="images/iphone.jpg" style="height: 100%; width: 100%;">
 						</button>
 						<button style="height: 200px; width: 200px; margin: 10px;">
-							<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
+							<img src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px;white-space: nowrap;">
 						</button>
 						<button style="height: 200px; width: 200px; margin: 10px;">
-							<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
+							<img src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px;white-space: nowrap;">
 						</button>
 					</div>
 				</div>
@@ -149,13 +154,16 @@
 				<div class="content">
 					<div class="button_1" style="display: flex; float: left; ">
 						<button style="height: 200px; width: 200px; margin: 10px;">
-							<img id="img_samsung_phone" src="images/flip5_lavender.png" style="height: 100px; width: 100px; white-space: nowrap;">
+							<img id="img_samsung_phone" src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px; white-space: nowrap;">
 						</button>
 						<button style="height: 200px; width: 200px; margin: 10px;">
-							<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
+							<img src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px;white-space: nowrap;">
 						</button>
 						<button style="height: 200px; width: 200px; margin: 10px;">
-							<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
+							<img src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px;white-space: nowrap;">
 						</button>
 					</div>
 				</div>
@@ -234,13 +242,13 @@
 </html>
 
 <style>
-	 .image_samsung_button {
-        display: inline-block;
-        padding: 0;
-        border: none;
-        background: none;
-		padding:50px,30px,50px,30px;
-    }
+	.image_samsung_button {
+		display: inline-block;
+		padding: 0;
+		border: none;
+		background: none;
+		padding: 50px, 30px, 50px, 30px;
+	}
 
     .img_samsung_phone{
         max-width: 100%;
@@ -266,12 +274,12 @@
 
 
 	$("#img_samsung_phone").hover(
-            function() {
-                $(this).attr("src","images/samsung-samsung-galaxy (2).gif");
-            },
-            function() {
-                $(this).attr("src","images/flip5_lavender.png");
-            }
-    );
+		function () {
+			$(this).attr("src", "images/samsung-samsung-galaxy (2).gif");
+		},
+		function () {
+			$(this).attr("src", "images/flip5_lavender.png");
+		}
+	);
 
 </script>

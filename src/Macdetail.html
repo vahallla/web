@@ -2,87 +2,219 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mac Detail</title>
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css" />
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+	<meta charset="UTF-8">
+	<title>CodePen - Scroll animations with GSAP</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;display=swap'>
+	<link rel="stylesheet" href="assets/css/macstyle.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body style="background-color: #4A4A4C;">
-  <header id="header">
-    <div class="logo"><a href="index.html">Tech <span>by Pineapple</span></a></div>
 
-  </header>
+<body style="background-color: #FBFAFB;">
+	<style>
+		p {
+			color: black;
+		}
 
+		span {
 
-  <main class="sticky-container" id="sticky-container">
-    <div class="sticky">
-      <div class="slide-container">
-        <div class="slide" id="slide1">
-          <div class="slide-big-text">
-            <p>Mac! 안녕하세요.</p>
-          </div>
-        </div>
-        <div id="scroll-down">
-          <div class="scroll-down-text">아래로 스크롤하세요.</div>
-        </div>
-        <div class="slide" id="slide2">
-          <div class="slide-big-text">
-            <p>처음 뵙겠습니다.</p>
-          </div>
-        </div>
-        <div class="slide" id="slide3">
-          <div class="slide-big-text">
-            <p>동쪽에서 새로운 해가</p>
-            <p>이윽고 떠올랐습니다.</p>
-          </div>
-        </div>
-        <div class="slide slide-left" id="slide4">
-          <div class="slide4-content">
-            <div class="slide-big-text">
-              <p>바랍처럼 흩날리는</p>
-              <p>자세한 설명이</p>
-              <p>있을 수도 있답니다</p>
-            </div>
-            <div class="slide-small-text">
-              <p>부가적인 설명은 아마도</p>
-              <p>작은 글씨로 해도 충분하지 않을까요?</p>
-            </div>
-          </div>
-        </div>
-        <div id="moving-background">독립적으로 움직이는 배경</div>
+			color: black;
+		}
+	</style>
 
-        <div class="slide slide-left" id="slide5">
-          <div class="slide-big-text">
-            <p>봄가을은</p>
-            <p>당신의 풍요로운</p>
-            <p>나날을 꿈꿉니다.</p>
-          </div>
-        </div>
-        <div class="slide slide-left" id="slide6">
-          <div class="slide-big-text">
-            <p>이게뭐죠</p>
-          </div>
-        </div>
+	<header id="header">
+		<div class="logo"><a href="index.html" style="color:black;">Tech <span style="color:black;">by
+					Pineapple</span></a>
+		</div>
 
-        <div class="slide slide-left" id="slide7">
-          <div class="slide-big-text">
-            <p>저도 몰라요</p>
+	</header>
+	<!-- partial:index.partial.html -->
+	<main>
+		<section class="section section--hero">
+			<div class="gallery" style="justify-content: center;">
+				<h2 class="header header--primary gallery__header">
+					<span>
+						MacBook Air
+					</span>
+				</h2>
+				<video width="1400px" height="1000px" playsinline muted autoplay>
+					<source src="images/maclarge.mp4" type="video/mp4">
 
-          </div>
-          <div class="go-surf-wrapper">
-            <a href="https://springfall.cc/post/5" target="_blank">이 코드의 설명을 보려면 여기를 눌르세요.</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <script type="module" src="script.js"></script>
+				</video>
+			</div>
+		</section>
+
+		<section class="section section--columns">
+			<div class="gallery section__column section__column--half">
+				<figure class="gallery__image gallery__image--full gallery__image--11">
+					<img src="https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/design/sizes/design_sizes_endframe__fecuynya55ei_large.jpg"
+						alt="" />
+
+				</figure>
+			</div>
+			<div class="section__column section__column--half">
+				<h2 class="header header--secondary section__header">
+					<span>
+						두 가지 완벽한 사이즈.
+					</span>
+				</h2>
+				<p class="section__paragraph">
+					13모델과 15모델 중 어느 것을 고르든, 두 모델 다 가볍고 두께는 1cm 남짓 될 정도로 얇기 때문에 어디든 쉽게 들고 다닐 수 있습니다.
+				</p>
+
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="header header--secondary section__header">
+				<span>
+					MacBook Air
+				</span>
+			</h2>
+			<ul class="section--columns section--columns-stretched">
+				<li class="section__column section__column--third">
+					<figure class="gallery__image gallery__image--full gallery__image--11">
+						<img src="https://www.apple.com/kr/macbook-air-13-and-15-m2/b/images/overview/performance/performance-hero_endframe__fd4dcihgw8ya_large.jpg"
+							alt="" />
+
+					</figure>
+					<h3 class="header header--quatenary section__column-header">
+						<span>
+							엄청난 스피드와 배터리!
+						</span>
+					</h3>
+					</a>
+					<p classs="section__column-paragraph">
+						M2 칩은 당신이 하는 모든 일에 속도를 더해줍니다! Intel Core i7 탑재한 노트북 대비, Mac은 최대 2배 더 빠른 성능, 최대 50% 더 긴 배터리 사용
+						시간을 자랑합니다.
+					</p>
+				</li>
+				<li class="section__column section__column--third">
+
+					<figure class="gallery__image gallery__image--full gallery__image--11">
+						<img src="https://www.apple.com/kr/macbook-air-13-and-15-m2/b/images/overview/switchers/new_mac_iphone__gjnuxvn4oz2a_large.jpg"
+							alt="" />
+
+					</figure>
+					<h3 class="header header--quatenary section__column-header">
+						<span>
+							Mac + iPhone
+						</span>
+					</h3>
+					</a>
+					<p classs="section__column-paragraph">
+						Mac은 iPhone만큼이나 익히기 쉽습니다. 그뿐만 아니라 언제든 Mac의 능력은 iPhone과 함께할 때 더욱 빛을 발합니다.
+					</p>
+				</li>
+				<li class="section__column section__column--third">
+
+					<figure class="gallery__image gallery__image--full gallery__image--11">
+						<img src="https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/switchers/new_icloud__byry26m5o3py_large.jpg"
+							alt="" />
+
+					</figure>
+					<h3 class="header header--quatenary section__column-header">
+						<span>
+							iCloud
+						</span>
+					</h3>
+					</a>
+					<p classs="section__column-paragraph">
+						당신의 모든 사진, 연락처, 문서등을 iCloud에 보관해두면, 이 모든 걸 당신의 모든 기기에서 간편하게 열어볼 수 있습니다.
+					</p>
+				</li>
+				<li class="section__column section__column--third">
+
+					<figure class="gallery__image gallery__image--full gallery__image--11">
+						<img src="https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/switchers/new_powerful_apps__tqozueeskxeu_large.jpg"
+							alt="" />
+
+					</figure>
+					<h3 class="header header--quatenary section__column-header">
+						<span>
+							각종 강력한 앱 기본 탑재.
+						</span>
+					</h3>
+					</a>
+					<p classs="section__column-paragraph">
+						원대한 아이디어를 펼치기 위한 창작 및 협업을 바로 진행할 수 있도록, Mac은 FaceTime, Freeform, Keynote같은 앱을 기본으로 탑재하고 있습니다.
+					</p>
+				</li>
+				<li class="section__column section__column--third">
+
+					<figure class="gallery__image gallery__image--full gallery__image--11">
+						<img src="https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/display-camera-audio/display_sound__gnu0zge9aoa6_large.jpg"
+							alt="" />
+
+					</figure>
+					<h3 class="header header--quatenary section__column-header">
+						<span>
+							온몸을 감싸는 듯한 사운드 시스템.
+						</span>
+					</h3>
+					</a>
+					<p classs="section__column-paragraph">
+						MacBook Air의 스피커는 Dolby Atmos를 구현하는 공간 음향을 지원하기 때문에 음악 및 영화 감상 시 3차원 음장 효과를 경험할 수 있게 해줍니다.
+					</p>
+				</li>
+				<li class="section__column section__column--third">
+
+					<figure class="gallery__image gallery__image--full gallery__image--11">
+						<img src="https://www.apple.com/kr/macbook-air-13-and-15-m2/b/images/overview/keyboard/magic_keyboard__cxbwo8i3w0wi_large.jpg"
+							alt="" />
+
+					</figure>
+					<h3 class="header header--quatenary section__column-header">
+						<span>
+							글자 그대로 맘에 쏙.
+						</span>
+					</h3>
+					</a>
+					<p classs="section__column-paragraph">
+						편안하고 조용한 백라이트 Magic Keyboard는 풀사이즈 기능키는 물론, 손가락 터치 한 번만으로 빠르고 쉽고 안전하게 Mac을 잠금 해제하고 앱과 사이트에
+						로그인할
+						수 있게 해주는 Touch ID까지 갖추었습니다.
+					</p>
+				</li>
+			</ul>
+		</section>
+
+		<section class="section section--elevated">
+			<h2 class="header header--secondary header--fancy">
+				<span>
+					당신을 위한 단 하나의 노트북
+				</span>
+			</h2>
+			<a style=" font-size: 28px;" href="https://www.apple.com/kr/shop/buy-mac/macbook-air"
+				class="button alt">구매하기</a>
+		</section>
+
+		<svg class="stroke" preserveAspectRatio="xMidYMid slice" fill-rule="evenodd" stroke-miterlimit="1.5"
+			clip-rule="evenodd" viewBox="0 1000 8500 14948.91">
+
+			<defs>
+				<mask id="mask">
+					<path class="stroke__mask"
+						d="M1799.62,844.469c0,-0 86.67,225.626 352.604,419.941c265.934,194.316 639.108,259.194 749.439,269.047c354.541,31.661 727.998,-254.715 1275.36,171.001c283.766,220.701 208.993,289.777 360.628,584.373c110.268,214.227 299.857,255.624 584.565,289.314c364.85,43.174 595.705,365.716 482.878,740.965c-149.255,496.405 -1272.82,904.06 -1765.26,829.414c-544.759,-82.578 -1046.53,-396.976 -970.684,-823.131c60.23,-338.391 593.618,-555.021 997.691,-232.209c552.948,441.75 831.032,965.428 629.208,1462.52c-201.824,497.089 -1034.61,402.817 -1549.24,718.21c-550.19,337.185 -200.112,988.499 -573.659,1558.23c-467.372,712.831 -455.685,1334.28 -873.02,1410.67c-465.433,85.192 -687.627,-545.142 -685.933,-964.731c1.612,-399.587 187.124,-708.201 747.229,-552.65c576.661,160.149 1237.76,1333.83 1850.63,1556.19c651.17,236.262 1193.39,-177.838 1723.39,-305.067c407.152,-97.738 1072.39,311.636 1368.98,136.826c207.995,-122.589 185.857,-552.168 -92.724,-479.922c-287.71,74.613 -535.68,360.921 -327.133,707.748c142.416,236.848 664.326,986.738 1166.91,1151.8c362.002,118.89 446.489,489.326 430.242,1068.17c-13.015,463.7 -839.212,630.514 -1258.24,614.161c-347.998,-13.581 -882.839,-28.699 -1100.92,148.324c-344.788,279.879 -432.27,742.736 -486.409,977.629c-52.38,227.261 -169.826,2150.04 -20.371,2401.76" />
+				</mask>
+			</defs>
+			<path class="stroke__wide"
+				d="M4462.32,625c0,0 14.613,622.459 -463.862,807.768c-481.301,186.404 -1447.09,-126.375 -1575.51,541.543c-124.818,649.224 959.032,311.455 1893.1,826.688c1089.01,600.699 -524.942,1127.57 -1302.17,1453.96c-951.997,399.786 -995.709,1421.16 -230.78,1308.47c1157.75,-170.555 2955.04,-369.639 2625.82,434.977c-258.167,630.956 -1834.68,308.013 -1915.59,964.376c-123.736,1003.78 785.635,859.091 1309.31,778.296c976.475,-150.654 1261.08,579.399 1203.78,1013.11c-62.259,471.302 -669.89,1009.61 -1534.75,1125.17c-1019.84,136.266 -2356.12,174.662 -2200.88,942.9c130.32,644.912 1957.69,378.097 2999.78,691.136c860.372,258.452 772.286,1223.59 346.923,1696.49c-769.812,855.852 -852.502,1355.35 -852.502,1355.35" />
+			<path class="stroke__narrow" mask="url(#mask)"
+				d="M1799.62,844.469c0,-0 86.67,225.626 352.604,419.941c265.934,194.316 639.108,259.194 749.439,269.047c354.541,31.661 727.998,-254.715 1275.36,171.001c283.766,220.701 208.993,289.777 360.628,584.373c110.268,214.227 299.857,255.624 584.565,289.314c364.85,43.174 595.705,365.716 482.878,740.965c-149.255,496.405 -1272.82,904.06 -1765.26,829.414c-544.759,-82.578 -1046.53,-396.976 -970.684,-823.131c60.23,-338.391 593.618,-555.021 997.691,-232.209c552.948,441.75 831.032,965.428 629.208,1462.52c-201.824,497.089 -1034.61,402.817 -1549.24,718.21c-550.19,337.185 -200.112,988.499 -573.659,1558.23c-467.372,712.831 -455.685,1334.28 -873.02,1410.67c-465.433,85.192 -687.627,-545.142 -685.933,-964.731c1.612,-399.587 187.124,-708.201 747.229,-552.65c576.661,160.149 1237.76,1333.83 1850.63,1556.19c651.17,236.262 1193.39,-177.838 1723.39,-305.067c407.152,-97.738 1072.39,311.636 1368.98,136.826c207.995,-122.589 185.857,-552.168 -92.724,-479.922c-287.71,74.613 -535.68,360.921 -327.133,707.748c142.416,236.848 664.326,986.738 1166.91,1151.8c362.002,118.89 446.489,489.326 430.242,1068.17c-13.015,463.7 -839.212,630.514 -1258.24,614.161c-347.998,-13.581 -882.839,-28.699 -1100.92,148.324c-344.788,279.879 -432.27,742.736 -486.409,977.629c-52.38,227.261 -169.826,2150.04 -20.371,2401.76" />
+			<path class="stroke__blob"
+				d="M16.433,16948.9l0,-4223.62l-16.433,-1736.42c48.513,-32.042 209.383,-99.459 464.775,-112.625c319.243,-16.417 847.398,391.875 1039.88,657c192.484,265.166 744.113,352 1298.09,279.25c553.975,-72.75 542.242,-342.584 880.258,-783.709c338.021,-441.166 823.925,-455.208 1295.74,-415.333c471.837,39.875 847.379,438.792 960.087,750.875c112.667,312.083 544.584,335.542 880.25,344.917c335.667,9.375 896.667,96.208 1295.75,382.5c319.209,229 389.667,768.041 384.959,1008.96l-0,3848.21l-8483.36,0Z" />
+		</svg>
+	</main>
+	<!-- partial -->
+	<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+	<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+	<script src='https://assets.codepen.io/16327/DrawSVGPlugin3.min.js'></script>
+	<script src='https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js'></script>
+	<script src="assets/js/macscript.js"></script>
+
 </body>
 
 </html>
