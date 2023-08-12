@@ -22,6 +22,7 @@
 
   <header id="header">
     <div class="logo"><a href="index.html" style="color:black;">Tech <span style="color:black;">by Pineapple</span></a>
+
     </div>
 
   </header>
@@ -30,9 +31,12 @@
   <main class="sticky-container" id="sticky-container">
     <div class="sticky">
 
-      <div class="slide-container">
+      <div class="slide-container" >
+      
+        <img src="images/samsung-samsung-galaxy (3).gif" id="videoSlide2" style=" position:absolute; right: 600px;">
 
         <div class="slide" id="slide1">
+          
           <div class="slide-big-text">
             <p>Galaxy 폴더블의 기준을 세우다</p>
           </div>
@@ -130,3 +134,23 @@
 
 
 </html>
+<style>
+  .videoslider2{
+    position:absolute;
+    right: 500px;
+  }
+</style>
+
+<script>
+ const videoSlide2 = document.getElementById("videoSlide2");
+let hasScrolled = false;
+
+// 스크롤 이벤트 리스너를 추가하여 두 번째 비디오 태그의 속성을 변경
+window.addEventListener("scroll", () => {
+    if (!hasScrolled) {
+        // 첫 스크롤 이벤트가 발생할 때만 비디오를 숨김
+        videoSlide2.style.display = "none";
+        hasScrolled = true;
+    }
+});
+</script>
