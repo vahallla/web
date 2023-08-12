@@ -52,15 +52,19 @@
 						<h2>Samsung Galaxy</h2>
 					</header>
 					<div class="content">
+						<span class="hov-anim-box">
 						<div class="button_1" style="display: flex; float: left; ">
 							<button style="height: 200px; width: 200px; margin: 10px;">
-								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
+								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="static_1">
+								<img src="images/zflip_1.gif" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="animated">
 							</button>
 							<button style="height: 200px; width: 200px; margin: 10px;">
-								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
+								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="static_2">
+								<img src="images/zflip_1.gif" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="animated_2">
 							</button>
 							<button style="height: 200px; width: 200px; margin: 10px;">
-								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
+								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="static_3">
+								<img src="images/zflip_1.gif" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="animated_3">
 							</button>
 						</div>
 					</div>
@@ -197,6 +201,18 @@
         max-width: 100%;
         max-height: 100%;
     }
+
+	.hov-anim-box .animated {
+  display: none
+}
+
+.hov-anim-box:hover .animated {
+  display: inline
+}
+
+.hov-anim-box:hover .static {
+  display: none
+}
 </style>
 
 <script>
