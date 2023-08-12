@@ -6,8 +6,23 @@
 -->
 <html>
 
+
+
 <head>
 	<title>Tech Item</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript"> 
+		$(document).ready(function() {
+			$("#img_samsung_phone").hover(
+            function() {
+                $(this).attr("src","images/samsung-samsung-galaxy (2).gif");
+            },
+            function() {
+                $(this).attr("src","images/flip5_lavender.png");
+            }
+    		); 
+		});
+	</script> 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,7 +42,7 @@
 		<ul class="links">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="shop.html">Shop</a></li>
-			<li><a href="testroll.html">Elements</a></li>
+			<li><a href="elements.html">Elements</a></li>
 		</ul>
 	</nav>
 
@@ -54,7 +69,7 @@
 					<div class="content">
 						<div class="button_1" style="display: flex; float: left; ">
 							<button style="height: 200px; width: 200px; margin: 10px;">
-								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
+								<img id="img_samsung_phone" src="images/flip5_lavender.png" style="height: 100px; width: 100px; white-space: nowrap;">
 							</button>
 							<button style="height: 200px; width: 200px; margin: 10px;">
 								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
@@ -216,15 +231,13 @@
 	});
 
 
-	$(function(){
-        $("#img_samsung_phone").hover(
-            function(){
+	$("#img_samsung_phone").hover(
+            function() {
                 $(this).attr("src","images/samsung-samsung-galaxy (2).gif");
             },
             function() {
                 $(this).attr("src","images/flip5_lavender.png");
             }
-        );
-    });
+    );
 
 </script>
