@@ -37,6 +37,14 @@
                 $(this).attr("src","images/samsung_buds2_pro.jpg");
             }
     		); 
+			$("#img_apple_phone").hover(
+            function() {
+                $(this).attr("src","images/iphone.gif");
+            },
+            function() {
+                $(this).attr("src","images/iphone.jpg");
+            }
+    		); 
 		});
 	</script> 
 	<meta charset="utf-8" />
@@ -104,7 +112,7 @@
 	<section id="two" class="wrapper post bg-img" data-bg="apple1.png"> <!--아이폰-->
 		<div class="inner" style="overflow: hidden;">
 			<div style="float: center; margin-right: 20px;">
-				<img src="images/apple_black.png" style="height: auto; width: auto;">
+				<img src="images/apple_logo.png" style="height: 200px; width: 200px; margin: 10px;">
 			</div>
 			<article class="box" style="width: 80%; margin: 0 auto;">
 				<header>
@@ -112,8 +120,8 @@
 				</header>
 				<div class="content">
 					<div class="button_1" style="display: flex; float: left; ">
-						<button style="height: 200px; width: 200px; margin: 10px;">
-							<img id="img_samsung_phone" src="images/flip5_lavender.png" style="height: 200px; width: 200px;">
+						<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: black;">
+							<img id="img_apple_phone" src="images/iphone.jpg" style="height: 100%; width: 100%;">
 						</button>
 						<button style="height: 200px; width: 200px; margin: 10px;">
 							<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
