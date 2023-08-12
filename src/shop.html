@@ -6,8 +6,41 @@
 -->
 <html>
 
+
+
 <head>
 	<title>Tech Item</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#img_samsung_phone").hover(
+				function () {
+					$(this).attr("src", "images/samsung-samsung-galaxy (2).gif");
+				},
+				function () {
+					$(this).attr("src", "images/samsung-samsung-galaxy (2)-0000.jpg");
+				}
+			);
+			$("#img_samsung_watch").hover(
+				function () {
+					$(this).attr("src", "images/samsung_Watch.gif");
+				},
+				function () {
+					$(this).attr("src", "images/samsung_Watch.jpg");
+				}
+			);
+			$("#img_samsung_buds").hover(
+				function () {
+					$(this).attr("src", "images/samsung_buds2_pro.gif");
+				},
+				function () {
+					$(this).attr("src", "images/samsung_buds2_pro.jpg");
+				}
+			);
+		});
+	</script>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,7 +51,7 @@
 
 	<!-- Header -->
 	<header id="header">
-		<div class="logo"><a href="index.html">Tech <span>by 폰팔이</span></a></div>
+		<div class="logo"><a href="index.html">Tech <span>by Pineapple</span></a></div>
 		<a href="#menu"><span>Menu</span></a>
 	</header>
 
@@ -27,7 +60,7 @@
 		<ul class="links">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="shop.html">Shop</a></li>
-			<li><a href="testroll.html">Elements</a></li>
+
 		</ul>
 	</nav>
 
@@ -37,12 +70,12 @@
 			to the full filename of your image. This is used in each section to set
 			the background image.
 		-->
-	
+
 
 	<!-- One -->
 	<section id="one" class="wrapper post bg-img" data-bg="sam.jpg"> <!--삼성 핸드폰-->
 		<div class="phone_2">
-			
+
 			<div class="inner">
 				<div style="float: left; margin-right: 100000px;">
 					<img src="images/256_144_4.avif" style="height: 100px; width: 100px;">
@@ -55,68 +88,81 @@
 						<span class="hov-anim-box">
 						<div class="button_1" style="display: flex; float: left; ">
 							<button style="height: 200px; width: 200px; margin: 10px;">
-								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="static_1">
-								<img src="images/zflip_1.gif" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="animated">
+								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
 							</button>
 							<button style="height: 200px; width: 200px; margin: 10px;">
-								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="static_2">
-								<img src="images/zflip_1.gif" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="animated_2">
+								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
 							</button>
 							<button style="height: 200px; width: 200px; margin: 10px;">
-								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="static_3">
-								<img src="images/zflip_1.gif" style="height: 100px; width: 100px;white-space: nowrap;" alt="" class="animated_3">
+								<img src="images/flip5_lavender.png" style="height: 100px; width: 100px;white-space: nowrap;">
 							</button>
 						</div>
 					</div>
 				</article>
 			</div>
-			</div>
+		</div>
 	</section>
 
 	<!-- Two -->
 	<section id="two" class="wrapper post bg-img" data-bg="apple1.png"> <!--아이폰-->
 		<div class="inner" style="overflow: hidden;">
-			<div style="float: left; margin-right: 20px;">
+			<div style="float: center; margin-right: 20px;">
 				<img src="images/apple_black.png" style="height: auto; width: auto;">
 			</div>
-			<article class="box">
+			<article class="box" style="width: 80%; margin: 0 auto;">
 				<header>
-					<h2>Apple </h2>
-					<h4>최신 아이폰 14 pro</h4>
+					<h2>Apple</h2>
 				</header>
 				<div class="content">
-					<div style="height: auto; width: auto; text-align: center;">
-						<img src="images/apple.gif" style="height: auto; width: auto; display: inline-block;">
+					<div class="button_1" style="display: flex; float: left; ">
+						<button style="height: 200px; width: 200px; margin: 10px;">
+							<img id="img_samsung_phone" src="images/flip5_lavender.png"
+								style="height: 200px; width: 200px;">
+						</button>
+						<button style="height: 200px; width: 200px; margin: 10px;">
+							<img src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px;white-space: nowrap;">
+						</button>
+						<button style="height: 200px; width: 200px; margin: 10px;">
+							<img src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px;white-space: nowrap;">
+						</button>
 					</div>
-					<p>최신 아이폰 만나보세요!</p>
 				</div>
-				<footer>
-					<a href="IPdetail.html" class="button alt">자세히 보기</a>
-				</footer>
 			</article>
 		</div>
 		<a href="#three" class="more">Learn More</a>
 	</section>
 
 	<!-- Three -->
-	<section id="three" class="wrapper post bg-img" data-bg="apple2.png"> <!--맥-->
-		<div class="inner">
-			<article class="box">
+	<section id="two" class="wrapper post bg-img" data-bg="apple1.png"> <!--아이폰-->
+		<div class="inner" style="overflow: hidden;">
+			<div style="float: center; margin-right: 20px;">
+				<img src="images/pngegg.png" style="height: 200px; width: 400px;">
+			</div>
+			<article class="box" style="width: 80%; margin: 0 auto;">
 				<header>
-					<h2>Macbook 제품</h2>
-					<img src="images/apple-apple-mac.gif" style=" height: 300px; width: 300px; text-align: center">
-					<p>최신 Pixel</p>
+					<h2>LG</h2>
 				</header>
 				<div class="content">
-
-					<p>최신 맥북을 만나보세요!</p>
+					<div class="button_1" style="display: flex; float: left; ">
+						<button style="height: 200px; width: 200px; margin: 10px;">
+							<img id="img_samsung_phone" src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px; white-space: nowrap;">
+						</button>
+						<button style="height: 200px; width: 200px; margin: 10px;">
+							<img src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px;white-space: nowrap;">
+						</button>
+						<button style="height: 200px; width: 200px; margin: 10px;">
+							<img src="images/flip5_lavender.png"
+								style="height: 100px; width: 100px;white-space: nowrap;">
+						</button>
+					</div>
 				</div>
-				<footer>
-					<a href="Macdetail.html" class="button alt">자세히 보기</a>
-				</footer>
 			</article>
 		</div>
-		<a href="#one" class="more">Learn More</a>
+		<a href="#three" class="more">Learn More</a>
 	</section>
 
 
@@ -189,30 +235,18 @@
 </html>
 
 <style>
-	 .image_samsung_button {
-        display: inline-block;
-        padding: 0;
-        border: none;
-        background: none;
-		padding:50px,30px,50px,30px;
-    }
+	.image_samsung_button {
+		display: inline-block;
+		padding: 0;
+		border: none;
+		background: none;
+		padding: 50px, 30px, 50px, 30px;
+	}
 
     .img_samsung_phone{
         max-width: 100%;
         max-height: 100%;
     }
-
-	.hov-anim-box .animated {
-  display: none
-}
-
-.hov-anim-box:hover .animated {
-  display: inline
-}
-
-.hov-anim-box:hover .static {
-  display: none
-}
 </style>
 
 <script>
@@ -232,15 +266,13 @@
 	});
 
 
-	$(function(){
-        $("#img_samsung_phone").hover(
-            function(){
-                $(this).attr("src","images/samsung-samsung-galaxy (2).gif");
-            },
-            function() {
-                $(this).attr("src","images/flip5_lavender.png");
-            }
-        );
-    });
+	$("#img_samsung_phone").hover(
+		function () {
+			$(this).attr("src", "images/samsung-samsung-galaxy (2).gif");
+		},
+		function () {
+			$(this).attr("src", "images/flip5_lavender.png");
+		}
+	);
 
 </script>
