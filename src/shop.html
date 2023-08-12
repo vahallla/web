@@ -63,6 +63,30 @@
                 $(this).attr("src","images/airpods-pro.jpg");
             }
     		); 
+			$("#img_lg_washing_machine").hover(
+            function() {
+                $(this).attr("src","images/lg_washing machine.gif");
+            },
+            function() {
+                $(this).attr("src","images/lg_washing machine.jpg");
+            }
+    		); 
+			$("#img_lg_gram").hover(
+            function() {
+                $(this).attr("src","images/gram.gif");
+            },
+            function() {
+                $(this).attr("src","images/gram.jpg");
+            }
+    		); 
+			$("#img_lg_refrigerator").hover(
+            function() {
+                $(this).attr("src","images/refrigerator.gif");
+            },
+            function() {
+                $(this).attr("src","images/refrigerator.jpg");
+            }
+    		); 
 		});
 	</script>
 	<meta charset="utf-8" />
@@ -156,7 +180,7 @@
 	</section>
 
 	<!-- Three -->
-	<section id="two" class="wrapper post bg-img" data-bg="apple1.png"> <!--아이폰-->
+	<section id="two" class="wrapper post bg-img" data-bg="LG_WallPaper1.jpg"> <!--아이폰-->
 		<div class="inner" style="overflow: hidden;">
 			<div style="float: center; margin-right: 20px;">
 				<img src="images/pngegg.png" style="height: 200px; width: 400px;">
@@ -167,17 +191,14 @@
 				</header>
 				<div class="content">
 					<div class="button_1" style="display: flex; float: left; ">
-						<button style="height: 200px; width: 200px; margin: 10px;">
-							<img id="img_samsung_phone" src="images/flip5_lavender.png"
-								style="height: 100px; width: 100px; white-space: nowrap;">
+						<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: white;">
+							<img id="img_lg_washing_machine" src="images/lg_washing machine.jpg" style="height: 100%; width: 100%;">
 						</button>
-						<button style="height: 200px; width: 200px; margin: 10px;">
-							<img src="images/flip5_lavender.png"
-								style="height: 100px; width: 100px;white-space: nowrap;">
+						<button style="height: 200px; width: 200px; margin: 10px; padding: 0px; background: black;">
+							<img id="img_lg_gram" src="images/gram.jpg" style="height: 100%; width: 100%;">
 						</button>
-						<button style="height: 200px; width: 200px; margin: 10px;">
-							<img src="images/flip5_lavender.png"
-								style="height: 100px; width: 100px;white-space: nowrap;">
+						<button style="height: 200px; width: 200px; margin: 10px; padding: 0px; background: white;">
+							<img id="img_lg_refrigerator" src="images/refrigerator.jpg" style="height: 100%; width: 100px;">
 						</button>
 					</div>
 				</div>
