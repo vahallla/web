@@ -134,24 +134,25 @@
 					</header>
 					<div class="content">
 						<span class="hov-anim-box">
-						<div class="button_1" style="display: flex; float: left; ">
-							<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: #F2F2F2;">
-								<a href="https://www.samsung.com/sec/smartphones/all-smartphones/?galaxy-z">
-									<img id="img_samsung_phone" src="images/samsung-samsung-galaxy (2)-0000.jpg" style="height: 100%; width: 100%;">
-								</a>
+						  <div class="button_1" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; ">
+							<button class="responsive-button" style="background: #F2F2F2;">
+							  <a href="https://www.samsung.com/sec/smartphones/all-smartphones/?galaxy-z">
+								<img id="img_samsung_phone" src="images/samsung-samsung-galaxy (2)-0000.jpg" style="height: 100%; width: 100%;">
+							  </a>
 							</button>
-							<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: #FFFFFF;">
-								<a href="https://www.samsung.com/sec/watches/all-watches/">
-									<img id="img_samsung_watch" src="images/samsung_Watch.jpg" style="height: 100%; width: 100%;">
-								</a>
+							<button class="responsive-button" style="background: #FFFFFF;">
+							  <a href="https://www.samsung.com/sec/watches/all-watches/">
+								<img id="img_samsung_watch" src="images/samsung_Watch.jpg" style="height: 100%; width: 100%;">
+							  </a>
 							</button>
-							<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: #FFFFFF;">
-								<a href="https://www.samsung.com/sec/buds/all-buds/">
-									<img id="img_samsung_buds" src="images/samsung_buds2_pro.jpg" style="height: 100%; width: 100%;">
-								</a>
+							<button class="responsive-button" style="background: #FFFFFF;">
+							  <a href="https://www.samsung.com/sec/buds/all-buds/">
+								<img id="img_samsung_buds" src="images/samsung_buds2_pro.jpg" style="height: 100%; width: 100%;">
+							  </a>
 							</button>
-						</div>
-					</div>
+						  </div>
+						</span>
+					  </div>
 				</article>
 			</div>
 		</div>
@@ -168,23 +169,24 @@
 					<h2>Apple</h2>
 				</header>
 				<div class="content">
-					<div class="button_1" style="display: flex; float: left; ">
-						<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: black;">
-							<a href="https://www.apple.com/kr/shop/buy-iphone">
-								<img id="img_apple_phone" src="images/iphone.jpg" style="height: 100%; width: 100%;">
-							</a>
+					<div class="button_1" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 0 auto;">
+						<button class="responsive-button" style="background: black;">
+						  <a href="https://www.apple.com/kr/shop/buy-iphone">
+							<img id="img_apple_phone" src="images/iphone.jpg" style="height: 100%; width: 100%;">
+						  </a>
 						</button>
-						<button style="height: 200px; width: 200px; margin: 10px; padding: 10px; background: black;">
-							<a href="https://www.apple.com/kr/shop/buy-watch">
-								<img id="img_apple_watch" src="images/apple_watch.jpg" style="height: 100%; width: 100%;">
-							</a>
+						<button class="responsive-button" style="background: black;">
+						  <a href="https://www.apple.com/kr/shop/buy-watch">
+							<img id="img_apple_watch" src="images/apple_watch.jpg" style="height: 100%; width: 100%;">
+						  </a>
 						</button>
-						<button style="height: 200px; width: 200px; margin: 10px; padding: 0px; background: black;">
-							<a href="https://www.apple.com/kr/airpods/">
-								<img id="img_apple_airpods" src="images/airpods-pro.jpg" style="height: 100%; width: 200px;">
-							</a>
+						<button class="responsive-button" style="background: black;">
+						  <a href="https://www.apple.com/kr/airpods/">
+							<img id="img_apple_airpods" src="images/airpods-pro.jpg" style="height: 100%; width: 100%;">
+						  </a>
 						</button>
-					</div>
+					  </div>
+					  
 				</div>
 			</article>
 		</div>
@@ -255,32 +257,93 @@
 		max-width: 100%;
 		max-height: 100%;
 	}
+	.button_1 {
+    display: flex;
+    float: left;
+  }
+
+  .button_1 button {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .button_1 {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button_1 button {
+      width: 100%;
+    }
+  }
 </style>
 
-<script>
-
-	let video = document.getElementById('myVideo');
-
-	window.addEventListener('scroll', function () {
-		// 비디오가 아직 끝나지 않았다면 스크롤 위치를 비디오 섹션의 하단에 고정
-		if (!video.ended) {
-			window.scrollTo(0, video.offsetTop + video.offsetHeight);
+<script type="text/javascript">
+	$(document).ready(function () {
+	  var isTouchDevice = false;
+  
+	  if ("ontouchstart" in document.documentElement) {
+		isTouchDevice = true;
+	  }
+  
+	  function handleImageHover(element, hoverSrc, defaultSrc) {
+		if (!isTouchDevice) {
+		  element.hover(
+			function () {
+			  $(this).attr("src", hoverSrc);
+			},
+			function () {
+			  $(this).attr("src", defaultSrc);
+			}
+		  );
+		} else {
+		  var isHovering = false;
+  
+		  element.on({
+			touchstart: function () {
+			  isHovering = true;
+			  $(this).attr("src", hoverSrc);
+			},
+			touchend: function () {
+			  if (isHovering) {
+				$(this).attr("src", defaultSrc);
+				isHovering = false;
+			  }
+			},
+		  });
 		}
+	  }
+  
+	  handleImageHover($("#img_samsung_phone"), "images/samsung-samsung-galaxy (2).gif", "images/samsung-samsung-galaxy (2)-0000.jpg");
+	  handleImageHover($("#img_samsung_watch"), "images/samsung_Watch.gif", "images/samsung_Watch.jpg");
+	  handleImageHover($("#img_samsung_buds"), "images/samsung_buds2_pro.gif", "images/samsung_buds2_pro.jpg");
+	  handleImageHover($("#img_apple_phone"), "images/iphone.gif", "images/iphone.jpg");
+	  handleImageHover($("#img_apple_watch"), "images/apple_watch.gif", "images/apple_watch.jpg");
+	  handleImageHover($("#img_apple_airpods"), "images/airpods-pro.gif", "images/airpods-pro.jpg");
+	  handleImageHover($("#img_lg_washing_machine"), "images/lg_washing machine.gif", "images/lg_washing machine.jpg");
+	  handleImageHover($("#img_lg_gram"), "images/gram.gif", "images/gram.jpg");
+	  handleImageHover($("#img_lg_refrigerator"), "images/refrigerator.gif", "images/refrigerator.jpg");
 	});
+  </script>
+<style>
+	.responsive-button {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
 
-	video.addEventListener('ended', function () {
-		// 비디오가 끝나면 스크롤 제한을 해제
-		window.removeEventListener('scroll', scrollHandler);
-	});
-
-
-	$("#img_samsung_phone").hover(
-		function () {
-			$(this).attr("src", "images/samsung-samsung-galaxy (2).gif");
-		},
-		function () {
-			$(this).attr("src", "images/flip5_lavender.png");
-		}
-	);
-
-</script>
+.responsive-button:hover {
+  transform: scale(1.05);
+}
+</style>

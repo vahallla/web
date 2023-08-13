@@ -141,16 +141,42 @@
   }
 </style>
 
-<script>
- const videoSlide2 = document.getElementById("videoSlide2");
-let hasScrolled = false;
 
-// 스크롤 이벤트 리스너를 추가하여 두 번째 비디오 태그의 속성을 변경
-window.addEventListener("scroll", () => {
-    if (!hasScrolled) {
-        // 첫 스크롤 이벤트가 발생할 때만 비디오를 숨김
-        videoSlide2.style.display = "none";
-        hasScrolled = true;
+<script>
+  const videoSlide2 = document.getElementById("videoSlide2");
+  const screenWidth = window.innerWidth;
+  
+  if (screenWidth <= 768) {
+      videoSlide2.style.right = "100px";
+  } else {
+      videoSlide2.style.right = "500px";  
+  }
+  
+  let hasScrolled = false;
+  
+  
+  window.addEventListener("scroll", () => {
+      if (!hasScrolled) {
+          videoSlide2.style.display = "none";
+          hasScrolled = true;
+      }
+  });
+  </script>
+  
+  <style>
+    .videoslider2 {
+      position: absolute;
     }
-});
-</script>
+  
+    @media (max-width: 768px) {
+      .videoslider2 {
+        right: 100px;
+      }
+    }
+  
+    @media (min-width: 769px) {
+      .videoslider2 {
+        right: 500px;
+      }
+    }
+  </style>
